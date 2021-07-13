@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../css/binfo.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/binfo.js"></script>
     <title>Basic Info</title>
 </head>
 <body>
-    <!--User Name-->
-    <div class="container">
-        <div class="col-sm form-group">
+    <div>
+        <div class="form-group">
             <label for="fname">Student Name:</label>
             <input type="text" class="form-control" id="uname" placeholder="Enter Name" name="uname" required>
         </div>
@@ -29,21 +29,22 @@
             <input type="text" class="form-control" id="mname" placeholder="Enter Name" name="mname" required>
         </div>
         </div>
-    <!--SSC-->
-    <div class="row">
-        <div class="col-sm-3 form-group">
-            <label for="ssc">SSC Result:</label>
-            <input type="text" class="form-control" id="ssc" placeholder="Enter Your GPA" name="ssc" required>
-        </div>
-        <div class="col-sm-3 form-group">
-            <label for="inputgrp">Group</label>
-            <select id="inputgrp" class="form-control">
-            <option selected>Choose...</option>
-            <option>Science</option>
-            <option>Commerce</option>
-            <option>Arts</option>
-            </select>
-        </div>
+        
+        <!--SSC-->
+        <div class="row">
+            <div class="col-sm-3 form-group">
+                <label for="ssc">SSC Result:</label>
+                <input type="text" class="form-control" id="ssc" placeholder="Enter Your GPA" name="ssc" required>
+            </div>
+            <div class="col-sm-3 form-group">
+                <label for="inputgrp">Group</label>
+                <select id="inputgrp" class="form-control">
+                <option selected>Choose...</option>
+                <option>Science</option>
+                <option>Commerce</option>
+                <option>Arts</option>
+                </select>
+            </div>
             <div class="col-sm-3 form-group">
                 <label for="inputbrd">Board</label>
                 <select id="inputbrd" class="form-control">
@@ -61,95 +62,104 @@
                 <label for="year">Passing Year</label>
                 <input type="text" class="form-control" id="year" placeholder="Enter Year" name="year" required>
             </div>
-    </div>
-    <!--HSC-->
-    <div class="row">
-        <div class="col-sm-3 form-group">
-            <label for="hsc">HSC Result:</label>
-            <input type="text" class="form-control" id="hsc" placeholder="Enter Your GPA" name="hsc" required>
         </div>
-        <div class="col-sm-3 form-group">
-            <label for="inputgrp">Group</label>
-            <select id="inputgrp" class="form-control">
-            <option selected>Choose...</option>
-            <option>Science</option>
-            <option>Commerce</option>
-            <option>Arts</option>
-            </select>
-        </div>
+        
+        <!--HSC-->
+        <div class="row">
             <div class="col-sm-3 form-group">
-                <label for="inputbrd">Board</label>
-                <select id="inputbrd" class="form-control">
+                <label for="hsc">HSC Result:</label>
+                <input type="text" class="form-control" id="hsc" placeholder="Enter Your GPA" name="hsc" required>
+            </div>
+            <div class="col-sm-3 form-group">
+                <label for="inputgrp">Group</label>
+                <select id="inputgrp" class="form-control">
                 <option selected>Choose...</option>
-                <option>Dhaka</option>
-                <option>Cumilla</option>
-                <option>Rajshahi</option>
-                <option>Bogura</option>
-                <option>Cox's Bazar</option>
-                <option>Rangpur</option>                                                                                                                            qrt
-                <option>Borisal</option>
+                <option>Science</option>
+                <option>Commerce</option>
+                <option>Arts</option>
                 </select>
             </div>
-            <div class="col-sm-3 form-group">
-                <label for="year">Passing Year</label>
-                <input type="text" class="form-control" id="year" placeholder="Enter Year" name="year" required>
+                <div class="col-sm-3 form-group">
+                    <label for="inputbrd">Board</label>
+                    <select id="inputbrd" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Dhaka</option>
+                    <option>Cumilla</option>
+                    <option>Rajshahi</option>
+                    <option>Bogura</option>
+                    <option>Cox's Bazar</option>
+                    <option>Rangpur</option>                                                                                                                            qrt
+                    <option>Borisal</option>
+                    </select>
+                </div>
+                <div class="col-sm-3 form-group">
+                    <label for="year">Passing Year</label>
+                    <input type="text" class="form-control" id="year" placeholder="Enter Year" name="year" required>
+                </div>
+        </div>
+    
+        <div class="row"> <!--Row  Date of Birth-->
+            <div class="md-form md-outline input-with-post-icon datepicker col-sm-6">
+                <label for="dob">Date of Birth:</label>
+                <input placeholder="Select date" type="date" id="dob" class="form-control">
+                
             </div>
-    </div>
-    <div class="row"> <!--Row 1 Date of Birth-->
-        <div class="col-sm-6">
-            <div class="form-group">
-            <label for="date">Date of birth:</label>
-            <div class='input-group date' id='datetimepicker10'>
-                  <input type='text' class="form-control" />
-                  <span class="input-group-addon"> 
-                  <span class="glyphicon glyphicon-calendar">
-                  </span>
-                  </span>
-               </div>
+            <!-- <div class="col-sm-6 form-group">
+                <label for="date">Date of birth:</label>
+                <div class='input-group date' id='datetimepicker10'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon"> 
+                    <span class="glyphicon glyphicon-calendar">
+                    </span>
+                    </span>
+                </div>
+            </div> -->
+            
+            <!--Phone Number-->
+            <div class="col-sm-6 form-group">   
+                <label for="pnum">Phone Number:</label>
+                <input type="text" class="form-control" id="pnum" placeholder="Enter" name="pnum" required>
             </div>
-         </div>
-    <!--Phone Number-->
-        <div class="col-sm-6 form-group">   
-        <label for="pnum">Phone Number:</label>
-        <input type="text" class="form-control" id="pnum" placeholder="Enter" name="pnum" required>
         </div>
+
+        <!--Address--> 
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2">
+            </div>
         </div>
-   <!--Address--> 
-   <div class="row">
-   <div class="form-group col-sm-6">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress">
-    </div>
-    <div class="form-group col-sm-6">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2">
-    </div>
-    </div>
-    <!--District-->
-    <div class="row">
-    <div class="col-sm-6 form-group">
-      <label for="inputDis">District</label>
-      <select id="inputDis" class="form-control">
-      <option selected>Choose...</option>
-      <option>Dhaka</option>
-      <option>Chittagong</option>
-      <option>Rajshahi</option>
-      <option>Dinajpur</option>
-      <option>Bogura</option>
-      </select>
-    </div>
-    <div class="form-row">
-        <div class="col-sm-4 form-group">
-        <label for="inputCity">City</label>
-        <input type="text" class="form-control" id="inputCity">
+
+        <!--District-->
+        <div class="row">
+            <div class="col-sm-6 form-group">
+                <label for="inputDis">District</label>
+                <select id="inputDis" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Dhaka</option>
+                    <option>Chittagong</option>
+                    <option>Rajshahi</option>
+                    <option>Dinajpur</option>
+                    <option>Bogura</option>
+                </select>
+            </div>
+        
+            <div class="col-sm-4 form-group">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+
+            <div class="col-sm-2 form-group">
+                <label for="inputZip">Zip Code</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
         </div>
-    <div class="col-sm-2 form-group">
-      <label for="inputZip">Zip Code</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-  </div> 
-  </div>  
+
+    </div>  
       
-   </div>
 </body>
 </html>
