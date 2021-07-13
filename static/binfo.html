@@ -11,8 +11,6 @@
     <script src="../js/binfo.js"></script>
     <title>Basic Info</title>
 </head>
-<body>
-    <div>
         <div class="form-group">
             <label for="fname">Student Name:</label>
             <input type="text" class="form-control" id="uname" placeholder="Enter Name" name="uname" required>
@@ -97,6 +95,30 @@
                     <input type="text" class="form-control" id="year" placeholder="Enter Year" name="year" required>
                 </div>
         </div>
+         <!--BSC-->
+         <div class="row">
+            <div class="col-sm-4 form-group">
+                <label for="bsc">Bachelor (Candidate applying for Master's Progam)</label>
+                <input type="text" class="form-control" id="bsc" placeholder="Enter Your CGPA" name="bsc" required>
+            </div>
+            <div class="col-sm-4 form-group">
+                <label for="ins">Institute Name</label>
+                <input type="text" class="form-control" id="ins" placeholder="Enter Name" name="ins" required>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="inputgrp">Program</label>
+                <select id="inputgrp" class="form-control">
+                <option selected>Choose...</option>
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>Civil</option>
+                </select>
+            </div>
+                <div class="col-sm-2 form-group">
+                    <label for="year">Passing Year</label>
+                    <input type="text" class="form-control" id="year" placeholder="Enter Year" name="year" required>
+                </div>
+        </div>
     
         <div class="row"> <!--Row  Date of Birth-->
             <div class="md-form md-outline input-with-post-icon datepicker col-sm-6">
@@ -104,16 +126,6 @@
                 <input placeholder="Select date" type="date" id="dob" class="form-control">
                 
             </div>
-            <!-- <div class="col-sm-6 form-group">
-                <label for="date">Date of birth:</label>
-                <div class='input-group date' id='datetimepicker10'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon"> 
-                    <span class="glyphicon glyphicon-calendar">
-                    </span>
-                    </span>
-                </div>
-            </div> -->
             
             <!--Phone Number-->
             <div class="col-sm-6 form-group">   
@@ -158,8 +170,6 @@
                 <input type="text" class="form-control" id="inputZip">
             </div>
         </div>
-
-    </div>  
-      
+        <button type="save" class="btn btn-primary">Save</button>  
 </body>
 </html>
