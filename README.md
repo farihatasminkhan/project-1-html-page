@@ -31,4 +31,9 @@
 - Used iFrame
 - Database connection not done
 
+# Project Screenshots
+![Account](screenshots/account.png?raw=true "Account")
+![Basic Info](screenshots/basic_info.png?raw=true "Basic Info")
+![Additonal Info](screenshots/additional_info.png?raw=true "Additional Info")
+
 
